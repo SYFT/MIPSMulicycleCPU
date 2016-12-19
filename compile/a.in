@@ -1,0 +1,18 @@
+jal 2
+halt
+addiu $t0, $zero, 3
+subu $t2, $zero, $t0
+sltu $t3, $zero, $t0
+sltiu $t4, $t3, 2
+sll $t4, $t4, 1
+addu $t1, $t0, $t3
+and $t0, $t1, $t2
+beq $t0, $t2, 3
+sltu $t0, $t4, $t3
+sltiu $t2, $t1, 1
+j 9
+sw $t4, 4($t1)
+lw $t0, 4($t1)
+or $t0, $t0, $t1
+ori $t0, $t0, 1
+jr $ra
