@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "F:/workspace/MulticycleCPU/DataReg.v";
+static const char *ng0 = "F:/workspace/FinishedProjects/MulticycleCPU/DataReg.v";
 
 
 
